@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2020-11-04T00:42:00.796Z",
-    "end": "2020-11-04T00:42:20.061Z",
-    "duration": 19265,
+    "start": "2020-11-04T01:46:10.012Z",
+    "end": "2020-11-04T01:46:29.076Z",
+    "duration": 19064,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "7e96d4a3-18b6-41bb-b69c-c986565e5e97",
+      "uuid": "78bdd361-3a0f-48a1-b8a3-43a9b6a10428",
       "title": "",
       "fullFile": "cypress\\integration\\01CriarConta.spec.js",
       "file": "cypress\\integration\\01CriarConta.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "61f05f57-41e4-4d47-b318-e0017b38ca88",
+          "uuid": "41383876-1264-4944-8844-a0d44554b22b",
           "title": "CriarConta",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Criar uma conta",
               "fullTitle": "CriarConta Criar uma conta",
               "timedOut": null,
-              "duration": 19210,
+              "duration": 19015,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit('index.php?controller=authentication&back=my-account');\ncy.get('input#email_create').type(chance.email());\ncy.get('button#SubmitCreate').click();\ncy.get('input#id_gender2').check();\ncy.get('input#customer_firstname').type('Alex');\ncy.get('input#customer_lastname').type('Alves');\ncy.get('input#passwd').type('teste02');\ncy.get('select#days').select('15');\ncy.get('select#months').select('March');\ncy.get('select#years').select('2000');\ncy.get('input#newsletter').click();\ncy.get('input#optin').click();\ncy.get('input#firstname').type('Alex');\ncy.get('input#lastname').type('Alves');\ncy.get('input#company').type('SpreadTecnologia');\ncy.get('input#address1').type('QHSN 02 Quadra 5');\ncy.get('input#address2').type('QHSN 02 Quadra 6');\ncy.get('input#city').type('Brasilia');\ncy.get('select#id_state').select('Alabama');\ncy.get('input#postcode').type('12345');\ncy.get('select#id_country').select('United States');\ncy.get('select#id_state').select(\"Alabama\");\ncy.get('#other').type('Criação de usuário para curso de Cypress');\ncy.get('input#phone').type('6198271625');\ncy.get('input#phone_mobile').type('2162751628');\ncy.get('input#alias').type('teste@mail.com');\ncy.get('button#submitAccount').click();\ncy.url().should('contain', 'index.php?controller=my-account');\ncy.get('div[class=row] p[class=info-account]').should('contain.text', 'Welcome to your account. Here you can manage all of your personal information and orders.');",
               "err": {},
-              "uuid": "91f35a7d-f194-4a92-8337-a797408e8360",
-              "parentUUID": "61f05f57-41e4-4d47-b318-e0017b38ca88",
+              "uuid": "d04c5e9b-8f8e-42bd-a8d3-4dea35d6624a",
+              "parentUUID": "41383876-1264-4944-8844-a0d44554b22b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "91f35a7d-f194-4a92-8337-a797408e8360"
+            "d04c5e9b-8f8e-42bd-a8d3-4dea35d6624a"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 19210,
+          "duration": 19015,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
