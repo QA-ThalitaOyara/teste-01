@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-11-04T15:55:41.266Z",
+    "end": "2020-11-04T15:56:02.949Z",
+    "duration": 21683,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b1bcb1cf-881c-459e-8d40-0319e282abb5",
+      "title": "",
+      "fullFile": "cypress/integration/01CriarConta.spec.js",
+      "file": "cypress/integration/01CriarConta.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d89f1e81-40e0-4e10-bc5d-a1662a80134f",
+          "title": "CriarConta",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Criar uma conta",
+              "fullTitle": "CriarConta Criar uma conta",
+              "timedOut": null,
+              "duration": 21526,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('index.php?controller=authentication&back=my-account');\ncy.get('input#email_create').type(chance.email());\ncy.get('button#SubmitCreate').click();\ncy.get('input#id_gender2').check();\ncy.get('input#customer_firstname').type('Alex');\ncy.get('input#customer_lastname').type('Alves');\ncy.get('input#passwd').type('teste02');\ncy.get('select#days').select('15');\ncy.get('select#months').select('March');\ncy.get('select#years').select('2000');\ncy.get('input#newsletter').click();\ncy.get('input#optin').click();\ncy.get('input#firstname').type('Alex');\ncy.get('input#lastname').type('Alves');\ncy.get('input#company').type('SpreadTecnologia');\ncy.get('input#address1').type('QHSN 02 Quadra 5');\ncy.get('input#address2').type('QHSN 02 Quadra 6');\ncy.get('input#city').type('Brasilia');\ncy.get('select#id_state').select('Alabama');\ncy.get('input#postcode').type('12345');\ncy.get('select#id_country').select('United States');\ncy.get('select#id_state').select(\"Alabama\");\ncy.get('#other').type('Criação de usuário para curso de Cypress');\ncy.get('input#phone').type('6198271625');\ncy.get('input#phone_mobile').type('2162751628');\ncy.get('input#alias').type('teste@mail.com');\ncy.get('button#submitAccount').click();\ncy.url().should('contain', 'index.php?controller=my-account');\ncy.get('div[class=row] p[class=info-account]').should('contain.text', 'Welcome to your account. Here you can manage all of your personal information and orders.');",
+              "err": {},
+              "uuid": "b370f089-916c-4244-9aa4-4f7105e91370",
+              "parentUUID": "d89f1e81-40e0-4e10-bc5d-a1662a80134f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b370f089-916c-4244-9aa4-4f7105e91370"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 21526,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
